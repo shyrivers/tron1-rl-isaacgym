@@ -280,7 +280,7 @@ install_pointfoot_legged_gym() {
     info "${yellow}安装 pointfoot-legged-gym 库 ..."
     cd "$rl_dir"
     if [ ! -d "$rl_dir/pointfoot-legged-gym" ]; then
-        git clone "$pointfoot_repo"
+        git clone "$pointfoot_repo" pointfoot-legged-gym
         check_err "${yellow}pointfoot-legged-gym 库失败"
     fi
     cd "$rl_dir/pointfoot-legged-gym"
